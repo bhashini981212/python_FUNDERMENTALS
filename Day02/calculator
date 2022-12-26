@@ -1,0 +1,53 @@
+# Author : Hashan Eranga
+# Application : Calculator
+# Date : 20/12/2022
+
+# function definitions
+
+print("█▀▀ ▄▀█ █░░ █▀▀ █░█ █░░ ▄▀█ ▀█▀ █▀█ █▀█")
+print("█▄▄ █▀█ █▄▄ █▄▄ █▄█ █▄▄ █▀█ ░█░ █▄█ █▀▄")
+
+# Todo : Get operand 1 value as a user input (operand1)
+operand1=int(input("Enter first input value:"))
+
+
+# Todo : Get operand 2 value as a user input (operand2)
+operand2=int(input("Enter second input value:"))
+
+# Todo : Enter the operator + or - or * or / (operator)
+operator=(input("Enter opertor by symbol (use addition(+),substraction(-),multiplication(*)and division(/)):"))
+
+def MathOperation(operand1, operand2, operator):
+    match operator:
+        case "+":
+            # add operand1 and operand2 assign it to a variable named result and return it
+           result =  operand1+operand2 
+           return result
+        case "-":
+            # subtract operand1 and operand2 assign it to a variable named result and return it
+            result =  operand1-operand2 
+            return result
+        case "*":
+            # multiply operand1 and operand2 assign it to a variable named result and return it
+            result =  operand1*operand2
+            return result
+        case "/":
+            # divide operand1 and operand2 assign it to a variable named result and return it
+             result =  operand1/operand2
+             return result
+
+answer = MathOperation(operand1, operand2, operator)
+
+print (f"{operand1}{operator}{operand2}={answer}")
+
+# Todo : <operand1> <operator> <operand2> = <answer>
+
+
+             
+
+
+
+        
+
+
+

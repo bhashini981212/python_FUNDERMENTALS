@@ -1,0 +1,40 @@
+#Auther:Bhashini Promodya
+#Application:Tip  Calculator
+#problem statement
+"""
+You and your friends need to split the bill and tip the waiter
+
+inputs : 
+    number of friends => numOfFriends
+    tip amount => tipAmount
+    total bill amount => billAmount
+
+process : 
+    total amount = total bill amount + tip amount 
+    => total = billAmount + tipAmount
+    
+    amount per person = total amount / number of friends 
+    => totalPerPerson = total / numOfFriends
+
+output :
+    amount per person"""
+#date:20/12/2022
+
+print("...........WELCOME TO CALCULATOR..........")
+#todo:getting user inputs
+a=int(input("Please enter the no:of friends :"))
+b=int(input("Please enter the tip amount:"))
+c=int(input("Please enter the total bill amount:"))
+print("No:of frinds total amount goes between is",a)
+print("Tip amount you have given",b)
+print("Total bill amount you have given",c)
+
+#todo:process input
+total=b+c
+totalPerPerson=total/a
+
+#todo:process evaluate results
+print("Finalized total is",total)
+
+#todo:display the results
+print("Amount per person should pay is",totalPerPerson)
